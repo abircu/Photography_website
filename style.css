@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;400;500;600;700;800;900&family=Lato:ital,wght@0,700;1,400;1,700&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:wght@300;400;500;600;700;800;900&family=Work+Sans:wght@400;500;600;700;800&display=swap');
+:root{
+    --black:#3A3A3A;
+}
+
+*{
+    
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    max-width: 1440px;
+    margin: 0 auto;
+    background-color: #FFF;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header nav ul{
+    display: flex;
+    gap: 2rem;
+
+}
+header li{
+    color: var(--black);
+    font-size: 1rem;
+    font-weight: 600;
+    gap: 1.5rem;
+    list-style: none;
+}
+header li img{
+    width: 24px;
+    height: 24px;
+}
+header h3{
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--black);
+}
+.hero-contianer{
+    margin-top: 50px;
+    display: flex;
+    gap: 130px;
+}
+.header-title{
+    width: calc((100% - 130px)/2 );
+}
+ .header-title h2{
+    color: var(--black);
+    font-size: 3.2rem;
+    font-weight: 700;
+    line-height: 4.3rem;
+}
+.header-title p{
+    color: var(--black);
+    font-size: 1rem;
+    font-weight: 600;
+    
+}
+.primary-btn{
+    border-radius: 41px;
+    background: #E02C6D;
+    padding: 10px 24px;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 700;
+    color: #FFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    border: 0;
+
+}
+
+.header-img{
+    background-image: url('images/Circle\ design.svg');
+    background-repeat: no-repeat;
+    width: calc(( 100% - 130px)/2 );
+    /* margin-left: 200px; */
+}
+/* .sponsor-area{
+    display: flex;
+} */
+.sponsor-container{
+    margin-top: 130px;
+    display: flex;
+    justify-content: space-between;
+    padding: 24px 32px;
+    border: 1px solid gray;
+}
+.sponsor-container img{
+    width: 10%;
+}
+
+@media screen and (max-width:576px) {
+    /* body{
+        margin: 0 32px;
+    } */
+    header, header nav ul, .sponsor-container{
+        flex-direction: column;
+    }
+    .hero-contianer{
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        gap:32px;
+    }
+    .header-title{
+        width: 100%;
+        text-align: center;
+        
+    }
+     .primary-btn{
+        margin: 0% 20%;
+    }
+    .header-img{
+        width: 100%;
+        background-position: center;
+    }
+    .header-img img{
+        width: 100%;
+    }
+    .sponsor-container {
+       flex-direction: row;
+        border: 0;
+        margin-top: 32px;
+   }
+}
+
+@media screen and (min-width:576px) and (max-width:992px){
+
+    header{
+           flex-direction: column;
+        }
+        .hero-contianer{
+            flex-direction: column-reverse;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+       .header-title{
+        width: 100%;
+       }
+       .primary-btn{
+        margin: 0% 35%;
+       }
+       .header-img{
+        justify-content: center;
+        align-items: center;
+       }
+       .sponsor-area{
+        margin-top: 32px;
+       }
+     .sponsor-container{
+        margin: 0% 4%;
+     }
+
+} 
+    
+
